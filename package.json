@@ -1,10 +1,10 @@
 {
-    "name": "app-service-hello-world",
-    "description": "Simple Hello World Node.js sample for Azure App Service",
+    "name": "School-portfolio",
+    "description": "Web Portfolio for college application",
     "version": "0.0.1",
     "private": true,
     "license": "MIT",
-    "author": "Microsoft",
+    "author": "Darius Lukas",
     "engines": {
         "node": ">=6.9.1"
     },
