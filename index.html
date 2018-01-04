@@ -27,11 +27,34 @@
             <h1>Darius Lukas</h1>
             <h3>Web Portfolio</h3>
         </div>
-       <div class="w3-card-4 w3-margin">
-            <img class="w3-image" src="me.jpg" width= height= alt="Picture of me working on Carbon Fiber">
-            <p class="w3-container w3-center">A picture of me working on laminating a carbon fiber quadcopter part late at night.</p>
+       <div class="w3-container w3-margin">
+            <img class="slideshow w3-image" src="me.jpg" alt="Picture of me working on Carbon Fiber">
+            <img class="slideshow w3-image" src="UASdrone.jpg" alt="An Arduino-based quadcopter I made for a school project">
+
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
        </div>
     </div>
     </div>
+
+    <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("slideshow");
+              if (n > x.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
 </body>
 </html>
