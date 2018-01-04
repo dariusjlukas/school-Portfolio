@@ -32,11 +32,16 @@
         <div class="w3-col s12 m10 l10 w3-dark-gray">
             <div class="w3-row-padding w3-container w3-display-container">
 
+                <!-- Cards -->
+
                 <div class="w3-half">
                 <div class="w3-panel w3-center w3-card-4 w3-blue-gray">
                     <h1>Thanics</h1>
                     <img class="w3-image" src="thanicsLogo.jpg" alt="Picture of the Thanics Company Logo">
                     <p>Thanics is a company I co-founded along with...</p>
+
+                    <button onclick="document.getElementById('thanics').style.display='block'"
+                    class="w3-button">More</button>
                 </div>
                 </div>
 
@@ -45,8 +50,25 @@
                     <h1>Summer Research</h1>
                     <img class="w3-image" src="MATLAB-Logo.png" alt="Picture of the MatLab logo">
                     <p>Over the summer, I worked with a professor from the Naval Academy on...</p>
+
+                    <button onclick="document.getElementById('internship').style.display='block'"
+                    class="w3-button">More</button>
                 </div>
                 </div>
+
+                <!-- Modals -->
+
+                <div id="thancis" class="w3-modal">
+                    <div class="w3-modal-content">
+                      <div class="w3-container">
+                        <span onclick="document.getElementById('id01').style.display='none'" 
+                        class="w3-button w3-display-topright">&times;</span>
+                        <h1>Thanics</h1>
+                        <p>Thanics is a company I co-founded along with..</p>
+                      </div>
+                    </div>
+                  </div>
+
             </div>
         </div>
     </div>
