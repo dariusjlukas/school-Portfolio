@@ -2,237 +2,233 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="w3.css">
+  <link rel="stylesheet" href="main.css">
+
+  <style>
+    .rotateimg90 {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+  </style>
 </head>
 
 <body class="w3-black">
 
-    <div class="w3-panel w3-red w3-display-container">
-        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-red w3-large w3-display-topright">&times;</span>
-        <p>Please note that this web site is in progress, sorry for the inconvenience.</p>
+  <div class="w3-panel w3-red w3-display-container">
+    <span onclick="this.parentElement.style.display='none'" class="w3-button w3-red w3-large w3-display-topright">&times;</span>
+    <p>Please note that this web site is in progress, sorry for the inconvenience.</p>
+  </div>
+
+  <div class="w3-container w3-center">
+    <h1>Projects</h1>
+  </div>
+
+  <div class="w3-row">
+
+    <div class="w3-col m2 l2 w3-bar-block w3-mobile w3-black w3-center">
+      <a href="index.html" class="w3-button w3-bar-item">Home</a>
+      <a href="projects.html" class="w3-button w3-bar-item w3-gray">Projects</a>
+      <a href="thisSite.html" class="w3-button w3-bar-item">This Site</a>
     </div>
+    <div class="w3-col s12 m10 l10 w3-dark-gray">
+      <div class="w3-row-padding w3-container w3-display-container">
 
-    <div class="w3-container w3-center">
-        <h1>Projects</h1>
-    </div>
+        <!-- Cards, row 1 -->
 
-    <div class="w3-row">
+        <div class="w3-half">
+          <div class="w3-panel w3-center w3-card-4 w3-blue-gray">
+            <h1>Thanics</h1>
+            <img class="w3-image" src="Business Card 4 (Darius).jpg" alt="Picture of the Thanics Company Logo">
+            <p>Thanics is a company I co-founded along with...</p>
 
-        <div class="w3-col m2 l2 w3-bar-block w3-mobile w3-black w3-center">
-            <a href="index.html" class="w3-button w3-bar-item">Home</a>
-            <a href="projects.html" class="w3-button w3-bar-item w3-gray">Projects</a>
-            <a href="thisSite.html" class="w3-button w3-bar-item">This Site</a>
+
+            <button onclick="document.getElementById('thanics').style.display='block'" class="w3-button w3-blue w3-margin">More</button>
+
+          </div>
         </div>
-        <div class="w3-col s12 m10 l10 w3-dark-gray">
-            <div class="w3-row-padding w3-container w3-display-container">
 
-                <!-- Cards, row 1 -->
+        <div class="w3-half">
+          <div class="w3-panel w3-center w3-card-4 w3-blue-gray">
+            <h1>Summer Research</h1>
+            <img class="w3-image" src="MATLAB-Logo.png" alt="Picture of the MatLab logo">
+            <p>Over the summer, I worked with a professor from the Naval Academy on...</p>
 
-                <div class="w3-half">
-                <div class="w3-panel w3-center w3-card-4 w3-blue-gray">
-                    <h1>Thanics</h1>
-                    <img class="w3-image" src="Business Card 4 (Darius).jpg" alt="Picture of the Thanics Company Logo">
-                    <p>Thanics is a company I co-founded along with...</p>
-
-                   
-                    <button onclick="document.getElementById('thanics').style.display='block'"
-                    class="w3-button w3-blue w3-margin">More</button>
-                    
-                </div>
-                </div>
-
-                <div class="w3-half">
-                <div class="w3-panel w3-center w3-card-4 w3-blue-gray">
-                    <h1>Summer Research</h1>
-                    <img class="w3-image" src="MATLAB-Logo.png" alt="Picture of the MatLab logo">
-                    <p>Over the summer, I worked with a professor from the Naval Academy on...</p>
-
-                    <button onclick="document.getElementById('internship').style.display='block'"
-                    class="w3-button w3-blue w3-margin">More</button>
-                </div>
-                </div>
-
-               
-
-            </div>
-
-            <div class="w3-row-padding w3-container w3-display-container">
-                <!-- Cards, row 2 -->
-
-                <div class="w3-half">
-                    <div class="w3-panel w3-center w3-card-4 w3-blue-gray">
-                        <h1>Rocket</h1>
-                        <img class="w3-image" src="rocket1.jpg" alt="Picture of the composite rocket">
-                        <p>Sophomore year of High School, I was given a project in Science class...</p>
-    
-                       
-                        <button onclick="document.getElementById('rocket').style.display='block'"
-                        class="w3-button w3-blue w3-margin">More</button>
-                        
-                    </div>
-                    </div>
-
-                    <div class="w3-half">
-                        <div class="w3-panel w3-center w3-card-4 w3-blue-gray">
-                            <h1>Science Fair</h1>
-                            <img class="w3-image" src="Science Fair.jpg" alt="Picture of">
-                            <p>Sophomore year of High School, a group of friends and I competed in...</p>
-        
-                           
-                            <button onclick="document.getElementById('scienceFair').style.display='block'"
-                            class="w3-button w3-blue w3-margin">More</button>
-                            
-                        </div>
-                        </div>
-
-            </div>
-
-            <div class="w3-row-padding w3-container w3-display-container">
-                <!-- Cards, row 3 -->
-
-                <div class="w3-half">
-                    <div class="w3-panel w3-center w3-card-4 w3-blue-gray">
-                        <h1>Robotics Club</h1>
-                        <img class="w3-image" src="robotics1.jpg" alt="Picture of ">
-                        <p>Both Freshman and Sophomore years of High School, I participated in...</p>
-    
-                       
-                        <button onclick="document.getElementById('robotics').style.display='block'"
-                        class="w3-button w3-blue w3-margin">More</button>
-                        
-                    </div>
-                    </div>
-
-                    <div class="w3-half">
-                        <div class="w3-panel w3-center w3-card-4 w3-blue-gray">
-                            <h1>Arduino Projects</h1>
-                            <img class="w3-image" src="tank_bot.jpg" alt="Picture of an Arduino">
-                            <p>Over the years I have done many small projects, many involving Arduinos...</p>
-        
-                           
-                            <button onclick="document.getElementById('arduino').style.display='block'"
-                            class="w3-button w3-blue w3-margin">More</button>
-                            
-                        </div>
-                        </div>
-
-            </div>
-
-            <div class="w3-row-padding w3-container w3-display-container">
-                <!-- Cards, row 4 -->
-
-                <div class="w3-rest">
-                    <div class="w3-panel w3-center w3-card-4 w3-blue-gray">
-                        <h1>Example Work</h1>
-                        <p>Example School projects</p>
-    
-                       
-                        <button onclick="document.getElementById('work').style.display='block'"
-                        class="w3-button w3-blue w3-margin">More</button>
-                        
-                    </div>
-                    </div>
-
-
-            </div>
-
-
-
-
-             <!-- Modals, all rows -->
-
-             <div id="thanics" class="w3-modal">
-                <div class="w3-modal-content">
-                  <div class="w3-container w3-blue">
-                    <span onclick="document.getElementById('thanics').style.display='none'" 
-                    class="w3-button w3-display-topright">&times;</span>
-                    <h1>Thanics</h1>
-                    <img class="w3-image" src="WebsiteFront.png" alt="Picture of the Thanics Company Logo">
-                    <p>Thanics is a company I co-founded along with..</p>
-                  </div>
-                </div>
-              </div>
-
-              <div id="internship" class="w3-modal">
-                <div class="w3-modal-content">
-                  <div class="w3-container w3-blue">
-                    <span onclick="document.getElementById('internship').style.display='none'" 
-                    class="w3-button w3-display-topright">&times;</span>
-                    <h1>Research</h1>
-                    <img class="w3-image" src="InternshipImage.jpg" alt="Picture of the cover page of the paper I co-published">
-                    <p>Over the summer, I worked with a professor from the Naval Academy on...</p>
-                  </div>
-                </div>
-              </div>
-
-              <div id="rocket" class="w3-modal">
-                <div class="w3-modal-content">
-                  <div class="w3-container w3-blue">
-                    <span onclick="document.getElementById('rocket').style.display='none'" 
-                    class="w3-button w3-display-topright">&times;</span>
-                    <h1>Research</h1>
-                    <img class="w3-image" src="rocket2.jpg" alt="Picture of the cover page of the paper I co-published">
-                    <img class="w3-image" src="rocketSchem.jpg" alt="Picture of the cover page of the paper I co-published">
-                    <p>Over the summer, I worked with a professor from the Naval Academy on...</p>
-                  </div>
-                </div>
-              </div>
-
-              <div id="scienceFair" class="w3-modal">
-                <div class="w3-modal-content">
-                  <div class="w3-container w3-blue">
-                    <span onclick="document.getElementById('scienceFair').style.display='none'" 
-                    class="w3-button w3-display-topright">&times;</span>
-                    <h1>Research</h1>
-                    <img class="w3-image" src="prop pitch.jpeg" alt="Picture of the cover page of the paper I co-published">
-                    <p>Over the summer, I worked with a professor from the Naval Academy on...</p>
-                  </div>
-                </div>
-              </div>
-
-              <div id="robotics" class="w3-modal">
-                <div class="w3-modal-content">
-                  <div class="w3-container w3-blue">
-                    <span onclick="document.getElementById('robotics').style.display='none'" 
-                    class="w3-button w3-display-topright">&times;</span>
-                    <h1>Robotics</h1>
-                    <img class="w3-image" src="robotics2.jpg" alt="Picture of the cover page of the paper I co-published">
-                    <p>Over the summer, I worked with a professor from the Naval Academy on...</p>
-                  </div>
-                </div>
-              </div>
-
-              <div id="arduino" class="w3-modal">
-                <div class="w3-modal-content">
-                  <div class="w3-container w3-blue">
-                    <span onclick="document.getElementById('arduino').style.display='none'" 
-                    class="w3-button w3-display-topright">&times;</span>
-                    <h1>Research</h1>
-                    <img class="w3-image" src=".jpg" alt="Picture of the cover page of the paper I co-published">
-                    <p>Over the summer, I worked with a professor from the Naval Academy on...</p>
-                  </div>
-                </div>
-              </div>
-
-              <div id="work" class="w3-modal">
-                <div class="w3-modal-content">
-                  <div class="w3-container w3-blue">
-                    <span onclick="document.getElementById('work').style.display='none'" 
-                    class="w3-button w3-display-topright">&times;</span>
-                    <h1>Research</h1>
-                    <img class="w3-image" src="Artboard 1-100.jpg" alt="Picture of the cover page of the paper I co-published">
-                    <p>Over the summer, I worked with a professor from the Naval Academy on...</p>
-                  </div>
-                </div>
-              </div>
-
+            <button onclick="document.getElementById('internship').style.display='block'" class="w3-button w3-blue w3-margin">More</button>
+          </div>
         </div>
+
+
+
+      </div>
+
+      <div class="w3-row-padding w3-container w3-display-container">
+        <!-- Cards, row 2 -->
+
+        <div class="w3-half">
+          <div class="w3-panel w3-center w3-card-4 w3-blue-gray">
+            <h1>Rocket</h1>
+            <img class="w3-image rotateimg90" src="rocket1.jpg" alt="Picture of the composite rocket">
+            <p>Sophomore year of High School, I was given a project in Science class...</p>
+
+
+            <button onclick="document.getElementById('rocket').style.display='block'" class="w3-button w3-blue w3-margin">More</button>
+
+          </div>
+        </div>
+
+        <div class="w3-half">
+          <div class="w3-panel w3-center w3-card-4 w3-blue-gray">
+            <h1>Science Fair</h1>
+            <img class="w3-image" src="Science Fair.jpg" alt="Picture of">
+            <p>Sophomore year of High School, a group of friends and I competed in...</p>
+
+
+            <button onclick="document.getElementById('scienceFair').style.display='block'" class="w3-button w3-blue w3-margin">More</button>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="w3-row-padding w3-container w3-display-container">
+        <!-- Cards, row 3 -->
+
+        <div class="w3-half">
+          <div class="w3-panel w3-center w3-card-4 w3-blue-gray">
+            <h1>Robotics Club</h1>
+            <img class="w3-image" src="robotics1.jpg" alt="Picture of ">
+            <p>Both Freshman and Sophomore years of High School, I participated in...</p>
+
+
+            <button onclick="document.getElementById('robotics').style.display='block'" class="w3-button w3-blue w3-margin">More</button>
+
+          </div>
+        </div>
+
+        <div class="w3-half">
+          <div class="w3-panel w3-center w3-card-4 w3-blue-gray">
+            <h1>Arduino Projects</h1>
+            <img class="w3-image" src="tank_bot.jpg" alt="Picture of an Arduino">
+            <p>Over the years I have done many small projects, many involving Arduinos...</p>
+
+
+            <button onclick="document.getElementById('arduino').style.display='block'" class="w3-button w3-blue w3-margin">More</button>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="w3-row-padding w3-container w3-display-container">
+        <!-- Cards, row 4 -->
+
+        <div class="w3-rest">
+          <div class="w3-panel w3-center w3-card-4 w3-blue-gray">
+            <h1>Example Work</h1>
+            <p>Example School projects</p>
+
+
+            <button onclick="document.getElementById('work').style.display='block'" class="w3-button w3-blue w3-margin">More</button>
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+      <!-- Modals, all rows -->
+
+      <div id="thanics" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container w3-blue">
+            <span onclick="document.getElementById('thanics').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h1>Thanics</h1>
+            <img class="w3-image" src="WebsiteFront.png" alt="Picture of the Thanics Company Logo">
+            <p>Thanics is a company I co-founded along with..</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="internship" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container w3-blue">
+            <span onclick="document.getElementById('internship').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h1>Research</h1>
+            <img class="w3-image" src="InternshipImage.jpg" alt="Picture of the cover page of the paper I co-published">
+            <p>Over the summer, I worked with a professor from the Naval Academy on...</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="rocket" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container w3-blue">
+            <span onclick="document.getElementById('rocket').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h1>Research</h1>
+            <img class="w3-image" src="rocket2.jpg" alt="Picture of the cover page of the paper I co-published">
+            <img class="w3-image" src="rocketSchem.jpg" alt="Picture of the cover page of the paper I co-published">
+            <p>Over the summer, I worked with a professor from the Naval Academy on...</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="scienceFair" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container w3-blue">
+            <span onclick="document.getElementById('scienceFair').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h1>Research</h1>
+            <img class="w3-image" src="prop pitch.jpeg" alt="Picture of the cover page of the paper I co-published">
+            <p>Over the summer, I worked with a professor from the Naval Academy on...</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="robotics" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container w3-blue">
+            <span onclick="document.getElementById('robotics').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h1>Robotics</h1>
+            <img class="w3-image" src="robotics2.jpg" alt="Picture of the cover page of the paper I co-published">
+            <p>Over the summer, I worked with a professor from the Naval Academy on...</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="arduino" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container w3-blue">
+            <span onclick="document.getElementById('arduino').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h1>Research</h1>
+            <img class="w3-image" src=".jpg" alt="Picture of the cover page of the paper I co-published">
+            <p>Over the summer, I worked with a professor from the Naval Academy on...</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="work" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container w3-blue">
+            <span onclick="document.getElementById('work').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h1>Research</h1>
+            <img class="w3-image" src="Artboard 1-100.jpg" alt="Picture of the cover page of the paper I co-published">
+            <p>Over the summer, I worked with a professor from the Naval Academy on...</p>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
 
 </body>
 
